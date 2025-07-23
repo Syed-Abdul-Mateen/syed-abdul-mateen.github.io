@@ -47,14 +47,35 @@
 
   <!-- Structured Data (Schema.org) -->
   <script type="application/ld+json">
- 
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Syed Abdul Mateen",
+    "url": "https://syed-abdul-mateen.github.io",
+    "image": "https://syed-abdul-mateen.github.io/images/profile.jpg",
+    "jobTitle": "AI & Cybersecurity Developer",
+    "description": "Final-year B.Tech CSE student focused on building AI+ cybersecurity tools.",
+    "email": "mailto:syedabdulmateen284@gmail.com",
+    "telephone": "+917286830284",
+    "sameAs": [
+      "https://github.com/Syed-Abdul-Mateen",
+      "https://linkedin.com/in/syed-abdul-mateen-2-8-4-"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "ICFAI Tech Hyderabad"
+    },
+    "knowsAbout": [
+      "Python", "AI Security", "Threat Detection", "Flask", "Streamlit", "Cybersecurity"
+    ]
+  }
   </script>
 </head>
 <body>
 
   <!-- Fullscreen Overlay for Profile Image Zoom -->
   <div id="profileOverlay" class="overlay" aria-hidden="true" role="dialog" aria-label="Expanded Profile View">
-    <img src="images/profile.jpg" alt="Syed Abdul Mateen - AI & Cybersecurity Developer" class="profile-img hover-zoom" id="profileImg" title="Click to view full-screen" />
+    <img src="images/profile.jpg" alt="Expanded Profile of Syed Abdul Mateen" id="expandedImg" class="expanded-img" />
     <span id="closeBtn" class="close-btn" aria-label="Close overlay">&times;</span>
   </div>
 
