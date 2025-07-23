@@ -3,190 +3,412 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Syed Abdul Mateen | AI & Cybersecurity</title>
+  <meta name="theme-color" content="#001f3f">
+  
+  <!-- Primary Meta Tags -->
+  <title>Syed Abdul Mateen | AI & Cybersecurity Developer | Python | Threat Detection</title>
+  <meta name="title" content="Syed Abdul Mateen | AI & Cybersecurity Developer">
+  <meta name="description" content="AI Security Developer | Python | Cyber Threat Detection | Final-Year B.Tech CSE Student at ICFAI Tech Hyderabad. Building intelligent defense tools with AI and automation.">
+  <meta name="keywords" content="AI Security, Cybersecurity, Python Developer, Threat Detection, Resume Screener, File Integrity, Process Monitoring, Machine Learning, Flask, Streamlit, GitHub, LinkedIn, Portfolio">
+  <meta name="author" content="Syed Abdul Mateen">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://syed-abdul-mateen.github.io">
+  <meta property="og:title" content="Syed Abdul Mateen | AI & Cybersecurity Developer">
+  <meta property="og:description" content="Building intelligent security tools with Python & AI. Experienced in threat detection, process monitoring, and AI-driven automation.">
+  <meta property="og:image" content="https://syed-abdul-mateen.github.io/images/profile.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://syed-abdul-mateen.github.io">
+  <meta property="twitter:title" content="Syed Abdul Mateen | AI & Cybersecurity Developer">
+  <meta property="twitter:description" content="AI Security Developer | Python | Cyber Threat Detection | Final-Year B.Tech CSE">
+  <meta property="twitter:image" content="https://syed-abdul-mateen.github.io/images/profile.jpg">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" href="image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Preload Assets -->
+  <link rel="preload" as="image" href="images/profile.jpg">
+  <link rel="preload" as="style" href="styles.css">
+  <link rel="preload" as="script" href="script.js">
+
+  <!-- Fonts & Styles -->
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css " rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Syed Abdul Mateen",
+    "url": "https://syed-abdul-mateen.github.io",
+    "image": "https://syed-abdul-mateen.github.io/images/profile.jpg",
+    "jobTitle": "AI & Cybersecurity Developer",
+    "description": "Final-year B.Tech CSE student focused on building AI+ cybersecurity tools.",
+    "email": "mailto:syedabdulmateen284@gmail.com",
+    "telephone": "+917286830284",
+    "sameAs": [
+      "https://github.com/Syed-Abdul-Mateen",
+      "https://linkedin.com/in/syed-abdul-mateen-2-8-4-"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "ICFAI Tech Hyderabad"
+    },
+    "knowsAbout": [
+      "Python", "AI Security", "Threat Detection", "Flask", "Streamlit", "Cybersecurity"
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- Background Animation -->
-  <div class="background-animation"></div>
+  <!-- Fullscreen Overlay for Profile Image Zoom -->
+  <div id="profileOverlay" class="overlay" aria-hidden="true" role="dialog" aria-label="Expanded Profile View">
+    <img src="images/profile.jpg" alt="Expanded Profile of Syed Abdul Mateen" id="expandedImg" class="expanded-img" />
+    <span id="closeBtn" class="close-btn" aria-label="Close overlay">&times;</span>
+  </div>
 
-  <!-- Navigation -->
-  <nav class="navbar">
+  <!-- Background Canvas for Neural Network Animation -->
+  <canvas id="neural-bg" class="neural-canvas" aria-hidden="true"></canvas>
+
+  <!-- Digital Noise Overlay (Cyberpunk Texture) -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Grid Overlay (Tech Grid Pattern) -->
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
     <div class="nav-container">
-      <a href="#" class="nav-logo">Mateen</a>
-      <ul class="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
+      <!-- Logo -->
+      <a href="#" class="nav-logo" aria-label="Home - Syed Abdul Mateen">SAM</a>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-menu" role="menubar">
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#education" role="menuitem">Education</a></li>
+        <li role="none"><a href="#languages" role="menuitem">Languages</a></li>
       </ul>
-      <a href="resume/Tech_resume.pdf" target="_blank" class="btn-resume">Resume</a>
+
+      <!-- Resume Download Button -->
+      <a href="resume/Tech_Resume.pdf" target="_blank" class="btn-resume pulse-glow" id="resumeBtn" aria-label="View Resume">
+        Resume
+      </a>
     </div>
   </nav>
-
+</br></br></br>
   <!-- Hero Section -->
-  <header id="about" class="hero">
+  <header id="about" class="hero" role="banner">
     <div class="container">
-      <img src="images/profile.png" alt="Syed Abdul Mateen" class="profile-img animate-pop" />
-      <h1>Syed Abdul Mateen</h1>
-      <p class="tagline"><span class="typing-text"></span></p>
+          <!-- Profile Image with Hover & Click Interaction -->
+         <img src="images/profile.jpg" alt="Syed Abdul Mateen - AI & Cybersecurity Developer" class="profile-img hover-zoom" id="profileImg" />
+
+      <!-- Name with Glitch Animation -->
+      <h1 class="glitch" data-text="Syed Abdul Mateen">Syed Abdul Mateen</h1>
+
+    <!-- Static Introduction -->
+    <div class="introduction">
+      <h3>B.Tech in Computer Science & Engineering</h3>
+      <p>
+        Final-Year B.Tech CSE Student – ICFAI Tech Hyderabad<br />
+        Python, AI & Cybersecurity Enthusiast | Prompt Engineer<br />
+        Focused on Threat Detection, Process Monitoring, AI Tools
+      </p></br></br>
+    </div>
+
+
+      <!-- Dynamic Typing Tagline -->
+      <!-- <p class="tagline"><span class="typing-text"></span></p> -->
+
+      <!-- Subtitle -->
       <p class="subtitle">Building Intelligent Security Tools with Python & AI</p>
 
-      <!-- Status Indicator (Centered) -->
+      <!-- Live Status Indicator -->
       <div class="status-indicator">
-        <div class="status-dot"></div>
+        <div class="status-dot blink"></div>
         <p class="status-message">Active in Cyber Defense Lab • Deploying AI Security Tools</p>
       </div>
 
-      <!-- Contact Info with Clickable Links -->
+      <!-- Contact Information -->
       <div class="contact-info">
-        <a href="mailto:syedabdulmateen284@gmail.com" target="_blank" class="contact-item">
+        <a href="mailto:syedabdulmateen284@gmail.com" class="contact-item ripple-effect" aria-label="Email me">
           <i class="fas fa-envelope"></i> syedabdulmateen284@gmail.com
         </a>
-        <a href="tel:+917286830284" target="_blank" class="contact-item">
-          <i class="fas fa-phone"></i> +91 7286830284
-        </a>
+        
         <div class="social-links">
-          <a href=" https://github.com/Syed-Abdul-Mateen " target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/syed-abdul-mateen-2-8-4- " target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Syed-Abdul-Mateen" target="_blank" title="GitHub Profile" aria-label="GitHub">
+            <i class="fab fa-github hover-pulse"></i>
+          </a>
+          <a href="https://linkedin.com/in/syed-abdul-mateen-2-8-4-" target="_blank" title="LinkedIn Profile" aria-label="LinkedIn">
+            <i class="fab fa-linkedin hover-pulse"></i>
+          </a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- About / Career Objective -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2><i class="fas fa-user-shield"></i> About Me</h2>
-      <p class="summary">
-        Final-year B.Tech CSE student at ICFAI Tech Hyderabad focused on building production-level AI+ cybersecurity tools. Experienced in developing Python-based applications for threat detection, real-time process tracking, and data leak risk assessment. Built and tested systems to monitor 1000+ system events, detect suspicious behavior, and verify file integrity.
-      </p>
-      <p>
-        <strong>Career Objective:</strong> To secure a role in AI-driven cybersecurity where I can build intelligent defense tools, automate threat detection, and contribute to safer digital systems. Currently focused on deploying real-world security solutions using Python, AI, and automation.
-      </p>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section gray">
-    <div class="container">
-      <h2><i class="fas fa-laptop-code"></i> Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3><i class="fas fa-cogs"></i> Programming & Tools</h3>
-          <ul>
-            <li>Python</li>
-            <li>Scikit-learn</li>
-            <li>OpenCV</li>
-            <li>Flask</li>
-            <li>Streamlit</li>
-            <li>ReportLab</li>
-            <li>psutil, YAML, Git, GitHub</li>
-          </ul>
+<!-- About Section -->
+<section id="about" class="section fade-up" role="region" aria-labelledby="about-heading">
+  <div class="container">
+    <h2 id="about-heading"><i class="fas fa-user-secret"></i> About <span class="text-gradient">Me</span></h2>
+    
+    <div class="about-grid">
+      <div class="about-intro">
+        <div class="profile-badge">
+          <i class="fas fa-laptop-code"></i>
+          <span>AI + Cybersecurity Developer</span>
         </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-shield-alt"></i> Cybersecurity & AI</h3>
-          <ul>
-            <li>Threat Detection</li>
-            <li>File Integrity Monitoring</li>
-            <li>Real-time Process Tracking</li>
-            <li>Prompt Engineering</li>
-            <li>AI for Security</li>
-            <li>Basic ML Models</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-users"></i> Soft Skills</h3>
-          <ul>
-            <li>Communication</li>
-            <li>Technical Writing</li>
-            <li>Incident Response Coordination</li>
-            <li>Root Cause Analysis</li>
-          </ul>
+        <p class="lead-text">
+          I'm a final-year B.Tech CSE student at <strong>ICFAI Tech Hyderabad</strong>, passionate about blending <span class="text-accent">Artificial Intelligence</span> with <span class="text-accent">Cybersecurity</span> to solve real-world security challenges.
+        </p>
+      </div>
+      
+      <div class="about-expertise">
+        <h3><i class="fas fa-bolt"></i> My Expertise</h3>
+        <ul class="expertise-list">
+          <li>
+            <i class="fas fa-shield-alt"></i>
+            <div>
+              <strong>Threat Detection Systems</strong>
+              <p>Built Python tools to monitor 1000+ system events and detect suspicious behavior patterns</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-chart-line"></i>
+            <div>
+              <strong>Real-time Process Tracking</strong>
+              <p>Developed monitoring solutions for anomaly detection in system processes</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-file-contract"></i>
+            <div>
+              <strong>File Integrity Verification</strong>
+              <p>Created systems to automatically verify file integrity and detect tampering</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="about-mission">
+        <div class="mission-card">
+          <h3><i class="fas fa-bullseye"></i> Career Mission</h3>
+          <p>To revolutionize digital defense through <strong>intelligent security solutions</strong> by:</p>
+          <div class="mission-points">
+            <span><i class="fas fa-robot"></i> Developing AI-powered threat detection</span>
+            <span><i class="fas fa-cogs"></i> Automating security monitoring</span>
+            <span><i class="fas fa-lock"></i> Building safer digital ecosystems</span>
+          </div>
+          <div class="current-focus">
+            <i class="fas fa-flask"></i>
+            <p>Currently focused on deploying <strong>real-world security solutions</strong> using Python, AI, and automation technologies</p>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
+
+<!-- Skills Section -->
+<section id="skills" class="section fade-up" role="region" aria-labelledby="skills-heading">
+  <div class="container">
+    <h2 id="skills-heading"><i class="fas fa-code"></i> Skills</h2>
+    
+    <div class="skills-grid">
+      <!-- Programming & Tools Column -->
+      <div class="skill-category">
+        <h3><i class="fas fa-laptop-code"></i> Programming & Tools</h3>
+        <div class="skill-items">
+          <div class="skill-box">Python</div>
+          <div class="skill-box">Scikit-learn</div>
+          <div class="skill-box">OpenCV</div>
+          <div class="skill-box">Flask</div>
+          <div class="skill-box">Streamlit</div>
+          <div class="skill-box">ReportLab</div>
+          <div class="skill-box">psutil, YAML, Git, GitHub</div>
+        </div>
+      </div>
+      
+      <!-- Cybersecurity & AI Column -->
+      <div class="skill-category">
+        <h3><i class="fas fa-shield-alt"></i> Cybersecurity & AI</h3>
+        <div class="skill-items">
+          <div class="skill-box">Threat Detection</div>
+          <div class="skill-box">File Integrity Monitoring</div>
+          <div class="skill-box">Real-time Process Tracking</div>
+          <div class="skill-box">Prompt Engineering</div>
+          <div class="skill-box">AI for Security</div>
+          <div class="skill-box">Basic ML Models</div>
+        </div>
+      </div>
+      
+      <!-- Soft Skills Column -->
+      <div class="skill-category">
+        <h3><i class="fas fa-users"></i> Soft Skills</h3>
+        <div class="skill-items">
+          <div class="skill-box">Communication</div>
+          <div class="skill-box">Technical Writing</div>
+          <div class="skill-box">Incident Response Coordination</div>
+          <div class="skill-box">Root Cause Analysis</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="section fade-up" role="region" aria-labelledby="projects-heading">
     <div class="container">
-      <h2><i class="fas fa-project-diagram"></i> Core Projects</h2>
+      <h2 id="projects-heading"><i class="fas fa-project-diagram"></i> Core Projects</h2>
       <div class="projects-grid">
 
-        <div class="project-card">
-          <div class="project-icon"><i class="fas fa-network-wired"></i></div>
-          <h3>AI-Driven Real-Time Cyberattack Detection</h3>
-          <p class="tech"><strong>Tech:</strong> Python, Scapy, NetworkX, Flask, ReportLab</p>
-          <ul>
-            <li>Analyzed 1000+ network packets/min to detect live threats.</li>
-            <li>Generated automated PDF reports for 20+ detected anomalies.</li>
-          </ul>
+        
+
+        <!-- Project 1: AI-Driven Cyberattack Detection -->
+        <div class="project-card flip-3d">
+          <div class="flip-3d-inner">
+            <div class="flip-3d-front">
+              <h3>AI-Driven Cyberattack Detection</h3>
+              <p>Tech: Python, Scapy, NetworkX, Flask</p>
+            </div>
+            <div class="flip-3d-back">
+              <p>Detected 1000+ packets/min. Generated PDF reports for 20+ threats.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-icon"><i class="fas fa-file-alt"></i></div>
-          <h3>AI Resume Screener</h3>
-          <p class="tech"><strong>Tech:</strong> Python, LangChain, OpenAI API, Streamlit</p>
-          <ul>
-            <li>Reduced manual screening effort by 70% using AI.</li>
-            <li>Screened 50+ resumes with real-time fit analysis via dashboard.</li>
-          </ul>
+
+        <!-- Project 2: AI Resume Screener -->
+        <div class="project-card flip-3d">
+          <div class="flip-3d-inner">
+            <div class="flip-3d-front">
+              <h3>AI Resume Screener</h3>
+              <p>Tech: Python, scikit-learn, Pandas, NLP, Flask</p>
+            </div>
+            <div class="flip-3d-back">
+              <p>Reduced screening effort by 70% using AI</p>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-icon"><i class="fas fa-bug"></i></div>
-          <h3>Suspicious Process Activity Detector</h3>
-          <p class="tech"><strong>Tech:</strong> psutil, win10toast, Tkinter, YAML</p>
-          <ul>
-            <li>Auto-terminated 40+ blacklisted processes in real time.</li>
-            <li>Improved manual review time by 50% with log visualization.</li>
-            <li>Built custom rule engine for process classification.</li>
-          </ul>
+
+        <!-- Project 3: File Integrity Verification and Alert System -->
+        <div class="project-card flip-3d">
+          <div class="flip-3d-inner">
+            <div class="flip-3d-front">
+              <h3>File Integrity Verification and Alert System</h3>
+              <p>Tech: Python, hashlib, OS, Tkinter</p>
+            </div>
+            <div class="flip-3d-back">
+              <p>Scanned 500+ files using hash comparison.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-icon"><i class="fas fa-fingerprint"></i></div>
-          <h3>File Integrity Verification System</h3>
-          <p class="tech"><strong>Tech:</strong> Hashlib, CLI</p>
-          <ul>
-            <li>Scanned 500+ files using hash comparison to detect tampering.</li>
-            <li>Flagged modified files within ~2 seconds per file.</li>
-          </ul>
+
+        <!-- Project 4:  Suspicious Process Activity Detector -->
+        <div class="project-card flip-3d">
+          <div class="flip-3d-inner">
+            <div class="flip-3d-front">
+              <h3> Suspicious Process Activity Detector</h3>
+              <p>Tech: Python, psutil, PyInstaller, Regex</p>
+            </div>
+            <div class="flip-3d-back">
+              <p>Auto-terminated 40+ blacklisted processes in real-time.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-icon"><i class="fas fa-exclamation-triangle"></i></div>
-          <h3>Data Leak Risk Assessment Toolkit</h3>
-          <p class="tech"><strong>Tech:</strong> Regex, Logging</p>
-          <ul>
-            <li>Flagged 30+ high-risk data patterns in simulated leaks.</li>
-            <li>Generated risk score reports with >90% accuracy.</li>
-            <li>Designed modular pipeline for leakage vector analysis.</li>
-          </ul>
+
+        <!-- Project 5: Data Leak Risk Assessment Toolkit -->
+        <div class="project-card flip-3d">
+          <div class="flip-3d-inner">
+            <div class="flip-3d-front">
+              <h3>Data Leak Risk Assessment Toolkit</h3>
+              <p>Tech: Python, Regex, Pandas, Flask</p>
+            </div>
+            <div class="flip-3d-back">
+              <p>Flagged 30+ high-risk patterns with 90%+ accuracy.</p>
+            </div>
+          </div>
         </div>
+
+
+        <!-- Project 6: System Log Anomaly Detection Framework -->
+        <div class="project-card flip-3d">
+          <div class="flip-3d-inner">
+            <div class="flip-3d-front">
+              <h3>System Log Anomaly Detection Framework</h3>
+              <p>Tech: Python, ELK Stack (Elasticsearch, Logstash, Kibana), scikit-learn</p>
+            </div>
+            <div class="flip-3d-back">
+              <p>Detected anomalies in 10,000+ log entries using behavior profiling.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 7:  Endpoint Ransomware Behavior Analysis Engine -->
+        <div class="project-card flip-3d">
+          <div class="flip-3d-inner">
+            <div class="flip-3d-front">
+              <h3>Endpoint Ransomware Behavior Analysis Engine</h3>
+              <p>Tech: Python, YARA, psutil, Pandas, Flask</p>
+            </div>
+            <div class="flip-3d-back">
+              <p>Identified ransomware-like activity from 100+ system behavior patterns.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 8: Behavior-Based Insider Threat Detection System -->
+        <div class="project-card flip-3d">
+          <div class="flip-3d-inner">
+            <div class="flip-3d-front">
+              <h3>Behavior-Based Insider Threat Detection System</h3>
+              <p>Tech: Python, scikit-learn, Pandas, Flask, User Behavior Analytics (UBA)</p>
+            </div>
+            <div class="flip-3d-back">
+              <p>Flagged 20+ suspicious insider behaviors with real-time alerts.</p>
+            </div>
+          </div>
+        </div>
+
 
       </div>
     </div>
   </section>
 
-  <!-- Education -->
-  <section id="education" class="section gray">
+  <!-- Education Section -->
+  <section id="education" class="section dark-bg slide-in" role="region" aria-labelledby="education-heading">
     <div class="container">
-      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <h2 id="education-heading"><i class="fas fa-graduation-cap"></i> Education</h2>
       <div class="timeline">
-        <div class="timeline-item">
+        <div class="timeline-item glow-on-scroll">
           <h3>B.Tech in Computer Science Engineering</h3>
           <p><strong>IFHE University (ICFAI Tech Hyderabad)</strong></p>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item glow-on-scroll">
           <h3>Intermediate (MPC)</h3>
           <p><strong>Narayana J.R. College</strong></p>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item glow-on-scroll">
           <h3>SSC Board</h3>
           <p><strong>Shishu Vihar High School</strong></p>
         </div>
@@ -194,12 +416,48 @@
     </div>
   </section>
 
+  <!-- Languages Section -->
+  <section id="languages" class="section fade-up" role="region" aria-labelledby="languages-heading">
+    <div class="container">
+      <h2 id="languages-heading"><i class="fas fa-language"></i> Languages</h2>
+      <div class="languages-grid">
+        <div class="language-item">
+          <h3>English</h3>
+          <p>Professional Proficiency</p>
+        </div>
+        <div class="language-item">
+          <h3>Urdu</h3>
+          <p>Native Speaker</p>
+        </div>
+        <div class="language-item">
+          <h3>Hindi</h3>
+          <p>Fluent</p>
+        </div>
+        <div class="language-item">
+          <h3>Telugu</h3>
+          <p>Conversational</p>
+        </div>
+        <div class="language-item">
+          <h3>Arabic</h3>
+          <p>Basic Reading</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <p>&copy; 2025 Syed Abdul Mateen. Crafted with ❤️ for Cyber Resilience.</p>
     </div>
   </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTop" class="scroll-to-top pulse" aria-label="Scroll to top">↑</button>
+
+  <!-- Action Popup -->
+  <div id="popup" class="popup hidden" role="alert">Action triggered!</div>
 
   <!-- Scripts -->
   <script src="script.js"></script>
