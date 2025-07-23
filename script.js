@@ -166,6 +166,12 @@ if (profileImg && overlay && expandedImg && closeBtn) {
   });
 }
 
+// Add event listener for hover
+const profileImg = document.getElementById('profileImg');
+profileImg.addEventListener('mouseenter', () => {
+  alert('Click to view full-screen');
+});
+
 // ======================================
 // 7. SKILL RINGS ANIMATION
 // ======================================
