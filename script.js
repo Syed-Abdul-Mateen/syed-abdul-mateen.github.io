@@ -166,7 +166,6 @@ if (profileImg && overlay && expandedImg && closeBtn) {
   });
 }
 
-
 // ======================================
 // 7. SKILL RINGS ANIMATION
 // ======================================
