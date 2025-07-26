@@ -1341,3 +1341,20 @@ h2 i {
   }
 }
 
+.project-link-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 14px;
+  font-size: 14px;
+  border: 1px solid #00a8ff;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.project-link-btn:hover {
+  background-color: rgba(0, 168, 255, 0.1);
+}
