@@ -4,95 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="theme-color" content="#001f3f">
-  
-  <!-- Primary Meta Tags -->
+
   <title>Syed Abdul Mateen | AI & Cybersecurity Developer | Python | Threat Detection</title>
-  <meta name="title" content="Syed Abdul Mateen | AI & Cybersecurity Developer">
-  <meta name="description" content="AI Security Developer | Python | Cyber Threat Detection | Final-Year B.Tech CSE Student at ICFAI Tech Hyderabad. Building intelligent defense tools with AI and automation.">
+  <meta name="description" content="AI Security Developer | Python | Cyber Threat Detection | Final-Year B.Tech CSE at ICFAI Tech Hyderabad. Building intelligent defense tools with AI and automation.">
   <meta name="keywords" content="AI Security, Cybersecurity, Python Developer, Threat Detection, Resume Screener, File Integrity, Process Monitoring, Machine Learning, Flask, Streamlit, GitHub, LinkedIn, Portfolio">
   <meta name="author" content="Syed Abdul Mateen">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  <meta name="revisit-after" content="7 days">
-  <meta name="format-detection" content="telephone=no">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Social cards -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://syed-abdul-mateen.github.io">
   <meta property="og:title" content="Syed Abdul Mateen | AI & Cybersecurity Developer">
-  <meta property="og:description" content="Building intelligent security tools with Python & AI. Experienced in threat detection, process monitoring, and AI-driven automation.">
-  <meta property="og:image" content="https://syed-abdul-mateen.github.io/images/profile.jpg">
-
-  <!-- Twitter -->
+  <meta property="og:image" content="images/profile.jpg">
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://syed-abdul-mateen.github.io">
-  <meta property="twitter:title" content="Syed Abdul Mateen | AI & Cybersecurity Developer">
-  <meta property="twitter:description" content="AI Security Developer | Python | Cyber Threat Detection | Final-Year B.Tech CSE">
-  <meta property="twitter:image" content="https://syed-abdul-mateen.github.io/images/profile.jpg">
 
-  <!-- Favicon & Icons -->
-  <link rel="icon" href="image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="manifest" href="manifest.json">
+  <!-- Favicon -->
+  <link rel="icon" href="image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>'">
 
-  <!-- Preload Assets -->
+  <!-- Preloads -->
   <link rel="preload" as="image" href="images/profile.jpg">
   <link rel="preload" as="style" href="styles.css">
   <link rel="preload" as="script" href="script.js">
 
-  <!-- Fonts & Styles -->
+  <!-- Fonts / Icons -->
   <link rel="stylesheet" href="styles.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-  <!-- Structured Data (Schema.org) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Syed Abdul Mateen",
-    "url": "https://syed-abdul-mateen.github.io",
-    "image": "https://syed-abdul-mateen.github.io/images/profile.jpg",
-    "jobTitle": "AI & Cybersecurity Developer",
-    "description": "Final-year B.Tech CSE student focused on building AI+ cybersecurity tools.",
-    "email": "mailto:syedabdulmateen284@gmail.com",
-    "telephone": "+917286830284",
-    "sameAs": [
-      "https://github.com/Syed-Abdul-Mateen",
-      "https://linkedin.com/in/syed-abdul-mateen-2-8-4-"
-    ],
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "ICFAI Tech Hyderabad"
-    },
-    "knowsAbout": [
-      "Python", "AI Security", "Threat Detection", "Flask", "Streamlit", "Cybersecurity"
-    ]
-  }
-  </script>
 </head>
 <body>
-
-  <!-- Fullscreen Overlay for Profile Image Zoom -->
+  <!-- Profile Lightbox -->
   <div id="profileOverlay" class="overlay" aria-hidden="true" role="dialog" aria-label="Expanded Profile View">
     <img src="images/profile.jpg" alt="Expanded Profile of Syed Abdul Mateen" id="expandedImg" class="expanded-img" />
     <span id="closeBtn" class="close-btn" aria-label="Close overlay">&times;</span>
   </div>
 
-  <!-- Background Canvas for Neural Network Animation -->
+  <!-- Background Canvases -->
   <canvas id="neural-bg" class="neural-canvas" aria-hidden="true"></canvas>
+  <canvas id="fx-bg" class="neural-canvas" aria-hidden="true"></canvas>
 
-  <!-- Digital Noise Overlay (Cyberpunk Texture) -->
+  <!-- Overlays -->
   <div class="noise-overlay" aria-hidden="true"></div>
-
-  <!-- Grid Overlay (Tech Grid Pattern) -->
   <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
 
-  <!-- Navigation Bar -->
+  <!-- Navbar -->
   <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
     <div class="nav-container">
-
-      <!-- Navigation Menu -->
       <ul class="nav-menu" role="menubar">
         <li role="none"><a href="#about" role="menuitem">About</a></li>
         <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
@@ -100,58 +55,48 @@
         <li role="none"><a href="#education" role="menuitem">Education</a></li>
         <li role="none"><a href="#languages" role="menuitem">Languages</a></li>
       </ul>
-
-      <!-- Resume Download Button -->
-      <a href="resume/Tech_Resume.pdf" target="_blank" class="btn-resume pulse-glow" id="resumeBtn" aria-label="View Resume">
+      <a href="resume.pdf" target="_blank" class="btn-resume pulse-glow magnet" id="resumeBtn" aria-label="View Resume">
         Resume
       </a>
     </div>
   </nav>
-</br></br></br>
-  <!-- Hero Section -->
+  <br/><br/><br/>
+
+  <!-- Hero -->
   <header id="about" class="hero" role="banner">
     <div class="container">
-      <!-- Profile Image with Hover & Click Interaction -->
       <img src="images/profile.jpg" alt="Syed Abdul Mateen - AI & Cybersecurity Developer" class="profile-img hover-zoom" id="profileImg" />
-
-      <!-- Name with Glitch Animation -->
       <h1 class="glitch" data-text="Syed Abdul Mateen">Syed Abdul Mateen</h1>
 
-    <!-- Static Introduction -->
-    <div class="introduction">
-      <h3>B.Tech in Computer Science & Engineering</h3>
-      <p>
-        Final-Year B.Tech CSE Student – ICFAI Tech Hyderabad<br />
-        Pursuing Ethical Hacking<br>
-        Python, AI & Cybersecurity Enthusiast | Prompt Engineer<br />
-        Focused on Threat Detection, Process Monitoring, AI Tools
-      </p></br></br>
-    </div>
+      <div class="introduction">
+        <h3>B.Tech in Computer Science & Engineering</h3>
+        <p>
+          Final-Year B.Tech CSE Student – ICFAI Tech Hyderabad<br />
+          Pursuing Ethical Hacking<br />
+          Python, AI & Cybersecurity Enthusiast | Prompt Engineer<br />
+          Focused on Threat Detection, Process Monitoring, AI Tools
+        </p>
+      </div>
 
-
-      <!-- Dynamic Typing Tagline -->
+      <!-- Optional live typing line (kept off by default) -->
       <!-- <p class="tagline"><span class="typing-text"></span></p> -->
 
-      <!-- Subtitle -->
-      <p class="subtitle">Building Intelligent Security Tools with Python & AI</p>
+      <p class="subtitle">Building Intelligent Security Tools with Python &amp; AI</p>
 
-      <!-- Live Status Indicator -->
       <div class="status-indicator">
         <div class="status-dot blink"></div>
         <p class="status-message">Active in Cyber Defense Lab • Deploying AI Security Tools</p>
       </div>
 
-      <!-- Contact Information -->
       <div class="contact-info">
-        <a href="mailto:syedabdulmateen284@gmail.com" class="contact-item ripple-effect" aria-label="Email me">
+        <a href="mailto:syedabdulmateen284@gmail.com" class="contact-item magnet" aria-label="Email me">
           <i class="fas fa-envelope"></i> syedabdulmateen284@gmail.com
         </a>
-        
         <div class="social-links">
-          <a href="https://github.com/Syed-Abdul-Mateen" target="_blank" title="GitHub Profile" aria-label="GitHub">
+          <a href="https://github.com/Syed-Abdul-Mateen" target="_blank" title="GitHub Profile" aria-label="GitHub" class="magnet">
             <i class="fab fa-github hover-pulse"></i>
           </a>
-          <a href="https://linkedin.com/in/syed-abdul-mateen-2-8-4-" target="_blank" title="LinkedIn Profile" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/syed-abdul-mateen-2-8-4-" target="_blank" title="LinkedIn Profile" aria-label="LinkedIn" class="magnet">
             <i class="fab fa-linkedin hover-pulse"></i>
           </a>
         </div>
@@ -159,110 +104,49 @@
     </div>
   </header>
 
-<!-- About Section -->
-<section id="about" class="section fade-up" role="region" aria-labelledby="about-heading">
+<!-- About -->
+<section id="about-section" class="section fade-up" role="region" aria-labelledby="about-heading">
   <div class="container">
     <h2 id="about-heading"><i class="fas fa-user-secret"></i> About <span class="text-gradient">Me</span></h2>
-    
-    <div class="about-grid">
-      <div class="about-intro">
-        <div class="profile-badge">
-          <i class="fas fa-laptop-code"></i>
-          <span>AI + Cybersecurity Developer</span>
-        </div>
-        <p class="lead-text">
-          I'm a final-year B.Tech CSE student at <strong>ICFAI Tech Hyderabad</strong>, passionate about blending <span class="text-accent">Artificial Intelligence</span> with <span class="text-accent">Cybersecurity</span> to solve real-world security challenges.
-        </p>
+
+    <!-- Single, aesthetic hacker-style card (no tilt) -->
+    <article class="about-card holo no-tilt">
+      <header class="about-header">
+        <span class="term-dot red"></span>
+        <span class="term-dot amber"></span>
+        <span class="term-dot green"></span>
+        <strong class="about-title">whoami — live</strong>
+      </header>
+
+      <div class="about-body">
+        <p>I’m a final-year Computer Science Engineering student at ICFAI University, Hyderabad, passionate about <strong>Cybersecurity, Ethical Hacking, and Artificial Intelligence</strong>. I enjoy exploring how systems can be broken, tested, and secured again, so most of my projects revolve around penetration testing, live packet analysis, and anomaly detection.</p>
+
+        <p>I’m curious about how AI can make ethical hacking smarter, helping us detect attacks faster and defend better. My goal is to grow into a skilled penetration tester and cybersecurity professional, building intelligent solutions that protect digital systems from real-world threats.</p>
       </div>
-      
-      <div class="about-expertise">
-        <h3><i class="fas fa-bolt"></i> My Expertise</h3>
-        <ul class="expertise-list">
-          <li>
-            <i class="fas fa-shield-alt"></i>
-            <div>
-              <strong>Threat Detection Systems</strong>
-              <p>Built Python tools to monitor 1000+ system events and detect suspicious behavior patterns</p>
-            </div>
-          </li>
-          <li>
-            <i class="fas fa-chart-line"></i>
-            <div>
-              <strong>Real-time Process Tracking</strong>
-              <p>Developed monitoring solutions for anomaly detection in system processes</p>
-            </div>
-          </li>
-          <li>
-            <i class="fas fa-file-contract"></i>
-            <div>
-              <strong>File Integrity Verification</strong>
-              <p>Created systems to automatically verify file integrity and detect tampering</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="about-mission">
-        <div class="mission-card">
-          <h3><i class="fas fa-bullseye"></i> Career Mission</h3>
-          <p>To revolutionize digital defense through <strong>intelligent security solutions</strong> by:</p>
-          <div class="mission-points">
-            <span><i class="fas fa-robot"></i> Developing AI-powered threat detection</span>
-            <span><i class="fas fa-cogs"></i> Automating security monitoring</span>
-            <span><i class="fas fa-lock"></i> Building safer digital ecosystems</span>
-          </div>
-          <div class="current-focus">
-            <i class="fas fa-flask"></i>
-            <p>Currently focused on deploying <strong>real-world security solutions</strong> using Python, AI, and automation technologies</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </article>
   </div>
 </section>
 
 
-<!-- Skills Section -->
+  <!-- Skills -->
 <section id="skills" class="section fade-up" role="region" aria-labelledby="skills-heading">
   <div class="container">
     <h2 id="skills-heading"><i class="fas fa-code"></i> Skills</h2>
-    
+
     <div class="skills-grid">
-      <!-- Programming & Tools Column -->
-      <div class="skill-category">
-        <h3><i class="fas fa-laptop-code"></i> Programming & Tools</h3>
+      <div class="skill-category holo">
+        <h3><i class="fas fa-toolbox"></i> My Skill Set</h3>
         <div class="skill-items">
-          <div class="skill-box">Python</div>
-          <div class="skill-box">Scikit-learn</div>
-          <div class="skill-box">OpenCV</div>
-          <div class="skill-box">Flask</div>
-          <div class="skill-box">Streamlit</div>
-          <div class="skill-box">ReportLab</div>
-          <div class="skill-box">psutil, YAML, Git, GitHub</div>
-        </div>
-      </div>
-      
-      <!-- Cybersecurity & AI Column -->
-      <div class="skill-category">
-        <h3><i class="fas fa-shield-alt"></i> Cybersecurity & AI</h3>
-        <div class="skill-items">
-          <div class="skill-box">Threat Detection</div>
-          <div class="skill-box">File Integrity Monitoring</div>
-          <div class="skill-box">Real-time Process Tracking</div>
-          <div class="skill-box">Prompt Engineering</div>
-          <div class="skill-box">AI for Security</div>
-          <div class="skill-box">Basic ML Models</div>
-        </div>
-      </div>
-      
-      <!-- Soft Skills Column -->
-      <div class="skill-category">
-        <h3><i class="fas fa-users"></i> Soft Skills</h3>
-        <div class="skill-items">
+          <div class="skill-box">MySQL</div>
+          <div class="skill-box">Penetration Testing</div>
+          <div class="skill-box">Python (Programming Language)</div>
+          <div class="skill-box">Cybersecurity</div>
+          <div class="skill-box">Ethical Hacking</div>
+          <div class="skill-box">Canva</div>
+          <div class="skill-box">Generative AI Tools</div>
+          <div class="skill-box">Creativity Skills</div>
           <div class="skill-box">Communication</div>
-          <div class="skill-box">Technical Writing</div>
-          <div class="skill-box">Incident Response Coordination</div>
-          <div class="skill-box">Root Cause Analysis</div>
+          <div class="skill-box">Teamwork</div>
         </div>
       </div>
     </div>
@@ -270,14 +154,13 @@
 </section>
 
 
-  <!-- Projects Section -->
+  <!-- Projects -->
   <section id="projects" class="section fade-up" role="region" aria-labelledby="projects-heading">
     <div class="container">
       <h2 id="projects-heading"><i class="fas fa-project-diagram"></i> Core Projects</h2>
       <div class="projects-grid">
-
-        <!-- Project 1: AI-Driven Cyberattack Detection -->
-        <div class="project-card flip-3d">
+        <!-- keep your 3D flip pattern but add holo tilt via JS -->
+        <div class="project-card flip-3d holo">
           <div class="flip-3d-inner">
             <div class="flip-3d-front">
               <h3>AI-Driven Cyberattack Detection</h3>
@@ -290,9 +173,7 @@
           </div>
         </div>
 
-
-        <!-- Project 2: AI Resume Screener -->
-        <div class="project-card flip-3d">
+        <div class="project-card flip-3d holo">
           <div class="flip-3d-inner">
             <div class="flip-3d-front">
               <h3>AI Resume Screener</h3>
@@ -301,14 +182,11 @@
             <div class="flip-3d-back">
               <p>Reduced screening effort by 70% using AI</p>
               <a href="https://github.com/Syed-Abdul-Mateen/ai-resume-screener" target="_blank" class="project-link-btn">Project Link</a>
-
             </div>
           </div>
         </div>
 
-
-        <!-- Project 3: File Integrity Verification and Alert System -->
-        <div class="project-card flip-3d">
+        <div class="project-card flip-3d holo">
           <div class="flip-3d-inner">
             <div class="flip-3d-front">
               <h3>File Integrity Verification and Alert System</h3>
@@ -317,17 +195,14 @@
             <div class="flip-3d-back">
               <p>Scanned 500+ files using hash comparison.</p>
               <a href="https://github.com/Syed-Abdul-Mateen/file-integrity-monitor" target="_blank" class="project-link-btn">Project Link</a>
-
             </div>
           </div>
         </div>
 
-
-        <!-- Project 4:  Suspicious Process Activity Detector -->
-        <div class="project-card flip-3d">
+        <div class="project-card flip-3d holo">
           <div class="flip-3d-inner">
             <div class="flip-3d-front">
-              <h3> Suspicious Process Activity Detector</h3>
+              <h3>Suspicious Process Activity Detector</h3>
               <p>Tech: Python, psutil, PyInstaller, Regex</p>
             </div>
             <div class="flip-3d-back">
@@ -337,9 +212,7 @@
           </div>
         </div>
 
-
-        <!-- Project 5: Data Leak Risk Assessment Toolkit -->
-        <div class="project-card flip-3d">
+        <div class="project-card flip-3d holo">
           <div class="flip-3d-inner">
             <div class="flip-3d-front">
               <h3>Data Leak Risk Assessment Toolkit</h3>
@@ -352,9 +225,7 @@
           </div>
         </div>
 
-
-        <!-- Project 6: System Log Anomaly Detection Framework -->
-        <div class="project-card flip-3d">
+        <div class="project-card flip-3d holo">
           <div class="flip-3d-inner">
             <div class="flip-3d-front">
               <h3>System Log Anomaly Detection Framework</h3>
@@ -367,9 +238,7 @@
           </div>
         </div>
 
-
-        <!-- Project 7:  Endpoint Ransomware Behavior Analysis Engine -->
-        <div class="project-card flip-3d">
+        <div class="project-card flip-3d holo">
           <div class="flip-3d-inner">
             <div class="flip-3d-front">
               <h3>Endpoint Ransomware Behavior Analysis Engine</h3>
@@ -382,9 +251,7 @@
           </div>
         </div>
 
-
-        <!-- Project 8: Behavior-Based Insider Threat Detection System -->
-        <div class="project-card flip-3d">
+        <div class="project-card flip-3d holo">
           <div class="flip-3d-inner">
             <div class="flip-3d-front">
               <h3>Behavior-Based Insider Threat Detection System</h3>
@@ -397,73 +264,45 @@
           </div>
         </div>
 
-
       </div>
     </div>
   </section>
 
-  <!-- Education Section -->
+  <!-- Education -->
   <section id="education" class="section dark-bg slide-in" role="region" aria-labelledby="education-heading">
     <div class="container">
       <h2 id="education-heading"><i class="fas fa-graduation-cap"></i> Education</h2>
       <div class="timeline">
-        <div class="timeline-item glow-on-scroll">
-          <h3>B.Tech in Computer Science Engineering</h3>
-          <p><strong>IFHE University (ICFAI Tech Hyderabad)</strong></p>
-        </div>
-        <div class="timeline-item glow-on-scroll">
-          <h3>Intermediate (MPC)</h3>
-          <p><strong>Narayana J.R. College</strong></p>
-        </div>
-        <div class="timeline-item glow-on-scroll">
-          <h3>SSC Board</h3>
-          <p><strong>Shishu Vihar High School</strong></p>
-        </div>
+        <div class="timeline-item glow-on-scroll"><h3>B.Tech in Computer Science Engineering</h3><p><strong>IFHE University (ICFAI Tech Hyderabad)</strong></p></div>
+        <div class="timeline-item glow-on-scroll"><h3>Intermediate (MPC)</h3><p><strong>Narayana J.R. College</strong></p></div>
+        <div class="timeline-item glow-on-scroll"><h3>SSC Board</h3><p><strong>Shishu Vihar High School</strong></p></div>
       </div>
     </div>
   </section>
 
-  <!-- Languages Section -->
+  <!-- Languages -->
   <section id="languages" class="section fade-up" role="region" aria-labelledby="languages-heading">
     <div class="container">
       <h2 id="languages-heading"><i class="fas fa-language"></i> Languages</h2>
       <div class="languages-grid">
-        <div class="language-item">
-          <h3>English</h3>
-          <p>Professional Proficiency</p>
-        </div>
-        <div class="language-item">
-          <h3>Urdu</h3>
-          <p>Native Speaker</p>
-        </div>
-        <div class="language-item">
-          <h3>Hindi</h3>
-          <p>Fluent</p>
-        </div>
-        <div class="language-item">
-          <h3>Telugu</h3>
-          <p>Conversational</p>
-        </div>
-        <div class="language-item">
-          <h3>Arabic</h3>
-          <p>Basic Reading</p>
-        </div>
+        <div class="language-item"><h3>English</h3><p>Professional Proficiency</p></div>
+        <div class="language-item"><h3>Urdu</h3><p>Native Speaker</p></div>
+        <div class="language-item"><h3>Hindi</h3><p>Fluent</p></div>
+        <div class="language-item"><h3>Telugu</h3><p>Conversational</p></div>
+        <div class="language-item"><h3>Arabic</h3><p>Basic Reading</p></div>
       </div>
     </div>
   </section>
 
-
   <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container">
-      <p>&copy; 2025 Syed Abdul Mateen. Crafted with ❤️ for Cyber Resilience.</p>
+      <p>&copy; <span id="year"></span> Syed Abdul Mateen. Crafted with ❤️ for Cyber Resilience.</p>
     </div>
   </footer>
 
-  <!-- Scroll to Top Button -->
+  <!-- Scroll to Top + Popup -->
   <button id="scrollToTop" class="scroll-to-top pulse" aria-label="Scroll to top">↑</button>
-
-  <!-- Action Popup -->
   <div id="popup" class="popup hidden" role="alert">Action triggered!</div>
 
   <!-- Scripts -->
